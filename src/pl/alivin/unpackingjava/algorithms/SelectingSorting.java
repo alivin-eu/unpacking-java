@@ -7,7 +7,7 @@ public class SelectingSorting {
 
         int[] arr = {5, 3, 8, 4, 2, 1};
 
-        //Selection sort
+        // Selection sort
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr.length; j++) {

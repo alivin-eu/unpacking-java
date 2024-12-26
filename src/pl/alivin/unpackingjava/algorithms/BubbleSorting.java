@@ -6,7 +6,7 @@ public class BubbleSorting {
 
     public int[] BubbleSortingWithoutFlag(int[] arr) {
 
-        // without sorting check flag
+        // 1. without sorting check flag
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
@@ -25,7 +25,7 @@ public class BubbleSorting {
 
     public int[] BubbleSortingWithFlagFor(int[] arr) {
 
-        // with flag isSorted
+        // 2. with flag isSorted
 
         boolean isSorted = false;
         for (int i = 0; i < arr.length; i++) {
@@ -50,7 +50,7 @@ public class BubbleSorting {
 
     public int[] BubbleSortingWithFlagWhile(int[] arr) {
 
-        //Bubble sort with test flag and while
+        //3. Bubble sort with test flag and while
 
         boolean isSorted = false;
         int count = 0;
