@@ -7,7 +7,8 @@ public class BubbleSorting {
     public int[] BubbleSortingWithoutFlag(int[] arr) {
 
         // 1. without sorting check flag
-
+        System.out.println("Bubble sort without sorting check flag");
+        int count = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - 1 - i; j++) {
                 if (arr[j] > arr[j + 1]) {
@@ -16,8 +17,9 @@ public class BubbleSorting {
                     arr[j + 1] = temp;
                 }
                 System.out.println(Arrays.toString(arr));
+                count++;
             }
-            System.out.println("Iteration " + i);
+            System.out.println("Bubble sort, number of passes: " + count);
         }
         return arr;
 
@@ -26,8 +28,9 @@ public class BubbleSorting {
     public int[] BubbleSortingWithFlagFor(int[] arr) {
 
         // 2. with flag isSorted
-
+        System.out.println("Bubble sort with flag isSorted");
         boolean isSorted = false;
+        int count = 0;
         for (int i = 0; i < arr.length; i++) {
 
             for (int j = 0; j < arr.length - 1 - i; j++) {
@@ -40,8 +43,9 @@ public class BubbleSorting {
                     isSorted = true;
                 }
                 System.out.println(Arrays.toString(arr));
+                count++;
             }
-            System.out.println("Iteration " + i);
+            System.out.println("Bubble sort, number of passes: " + count);
 
         }
         System.out.println(isSorted);
@@ -51,7 +55,7 @@ public class BubbleSorting {
     public int[] BubbleSortingWithFlagWhile(int[] arr) {
 
         //3. Bubble sort with test flag and while
-
+        System.out.println("Bubble sort with test flag and while");
         boolean isSorted = false;
         int count = 0;
         while (!isSorted) {
@@ -66,9 +70,8 @@ public class BubbleSorting {
                 System.out.println(Arrays.toString(arr));
                 count++;
             }
+            System.out.println("Bubble sort, number of passes: " + count);
         }
-        System.out.println("Bubble sort, number of passes: " + count);
-
         return arr;
     }
 
