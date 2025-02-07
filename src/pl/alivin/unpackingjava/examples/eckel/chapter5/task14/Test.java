@@ -1,6 +1,6 @@
 package pl.alivin.unpackingjava.examples.eckel.chapter5.task14;
 
-public class Test {
+class Test {
     static String str = new String("This is a static class field");
 
     static {

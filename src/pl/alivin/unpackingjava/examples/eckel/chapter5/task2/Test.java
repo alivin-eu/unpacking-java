@@ -1,6 +1,6 @@
 package pl.alivin.unpackingjava.examples.eckel.chapter5.task2;
 
-public class Test {
+class Test {
     String string = "Test string";
     String s;
 

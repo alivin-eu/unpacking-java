@@ -1,6 +1,6 @@
 package pl.alivin.unpackingjava.examples.eckel.chapter5.task1;
 
-public class Test {
+class Test {
     String string;
 
     public static void main(String[] args) {
